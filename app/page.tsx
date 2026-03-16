@@ -21,8 +21,8 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="relative bg-gray-900 text-white overflow-hidden">
-        {/* On peut facilement changer ce lien d'image plus tard pour une vraie photo de prestation */}
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
+        {/* On utilise maintenant la photo du siège auto */}
+        <div className="absolute inset-0 bg-[url('/hero-bg.jpg')] bg-cover bg-center"></div>
         <div className="absolute inset-0 bg-gray-900/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
