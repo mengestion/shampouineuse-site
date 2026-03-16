@@ -2,8 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Suppression totale du comportement sombre par défaut pour garantir le fond crème et les textes lisibles sur PC */
-body {
-  background-color: #F9FAFB; /* bg-cream */
-  color: #1F2937; /* text-gray-800 */
+@layer base {
+  body {
+    background-color: #F9FAFB !important; /* bg-cream forcé */
+    color: #1F2937 !important; /* text-gray-800 forcé */
+  }
+}
+
+/* Force la suppression des règles dark mode par défaut de Tailwind */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #F9FAFB !important;
+    color: #1F2937 !important;
+  }
 }
