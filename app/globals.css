@@ -2,13 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 31, 41, 55;
-  --background-start-rgb: 249, 250, 251;
-  --background-end-rgb: 249, 250, 251;
-}
-
+/* Suppression totale du comportement sombre par défaut pour garantir le fond crème et les textes lisibles sur PC */
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-start-rgb));
+  background-color: #F9FAFB; /* bg-cream */
+  color: #1F2937; /* text-gray-800 */
 }
