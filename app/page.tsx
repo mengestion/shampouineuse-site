@@ -130,12 +130,19 @@ export default function Home() {
               </div>
               <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Auto" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
             </div>
-            {/* Image 3 */}
+            {/* Image 3 (Tapis) avec effet Avant / Après */}
             <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group shadow-sm">
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <div className="absolute top-4 right-4 bg-white/90 text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-100 group-hover:opacity-0 transition-opacity">
+                Avant
+              </div>
+              <div className="absolute top-4 right-4 bg-[#F3C300] text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+                Après
+              </div>
+              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
                 <span className="text-white font-bold text-xl drop-shadow-md">Tapis & Moquettes</span>
               </div>
-              <img src="https://images.unsplash.com/photo-1528343132644-fb8bb994d509?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Tapis" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+              <img src="/tapis-avant.jpg" alt="Nettoyage Tapis Avant" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
+              <img src="/tapis-apres.jpg" alt="Nettoyage Tapis Après" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-0 group-hover:opacity-100 transform group-hover:scale-105" />
             </div>
           </div>
         </div>
