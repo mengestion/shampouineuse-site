@@ -45,7 +45,7 @@ export default function Home() {
       </div>
 
       {/* How it works */}
-      <div className="py-16 bg-cream">
+      <div id="comment-ca-marche" className="py-16 bg-cream scroll-mt-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">La propreté en 3 étapes simples</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
