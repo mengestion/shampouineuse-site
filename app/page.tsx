@@ -122,7 +122,7 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex items-end justify-center pb-6 opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10 pointer-events-none">
                 <span className="text-white font-bold text-xl drop-shadow-md">Canapés</span>
               </div>
-              <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Canapé" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
+              <img src="/canape.jpg" alt="Nettoyage Canapé" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
             </div>
             {/* Image 2 */}
             <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group shadow-sm">
