@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-cream text-gray-800 font-sans antialiased min-h-screen">
+    <div className="bg-[#F9FAFB] text-gray-800 font-sans antialiased min-h-screen">
       {/* Navigation */}
       <nav className="bg-white shadow-sm sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -20,9 +20,10 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <div className="relative bg-charcoal text-white overflow-hidden">
+      <div className="relative bg-gray-900 text-white overflow-hidden">
         {/* On peut facilement changer ce lien d'image plus tard pour une vraie photo de prestation */}
-        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?q=80&w=1974&auto=format&fit=crop')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gray-900/80"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
           <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-white">
             Redonnez vie à vos textiles. <br />
@@ -85,7 +86,7 @@ export default function Home() {
       </div>
 
       {/* How it works (Style restauré) */}
-      <div id="comment-ca-marche" className="py-16 bg-cream scroll-mt-20 border-t border-gray-100">
+      <div id="comment-ca-marche" className="py-16 bg-[#F9FAFB] scroll-mt-20 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold text-gray-900 mb-12">La propreté en 3 étapes simples</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -118,27 +119,27 @@ export default function Home() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
             {/* Image 1 */}
             <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group shadow-sm">
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex items-end justify-center pb-6 opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10 pointer-events-none">
                 <span className="text-white font-bold text-xl drop-shadow-md">Canapés</span>
               </div>
               <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Canapé" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
             </div>
             {/* Image 2 */}
             <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group shadow-sm">
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex items-end justify-center pb-6 opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10 pointer-events-none">
                 <span className="text-white font-bold text-xl drop-shadow-md">Intérieurs Auto</span>
               </div>
               <img src="https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=800" alt="Nettoyage Auto" className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500" />
             </div>
             {/* Image 3 (Tapis) avec effet Avant / Après */}
             <div className="aspect-square bg-gray-100 rounded-xl overflow-hidden relative group shadow-sm">
-              <div className="absolute top-4 right-4 bg-white/90 text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-100 group-hover:opacity-0 transition-opacity">
+              <div className="absolute top-4 right-4 bg-white/90 text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-100 group-hover:opacity-0 transition-opacity duration-300">
                 Avant
               </div>
-              <div className="absolute top-4 right-4 bg-[#F3C300] text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute top-4 right-4 bg-[#F3C300] text-gray-900 px-3 py-1 rounded-full text-xs font-bold z-20 shadow-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 Après
               </div>
-              <div className="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 pointer-events-none">
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex items-end justify-center pb-6 opacity-100 group-hover:opacity-0 transition-opacity duration-300 z-10 pointer-events-none">
                 <span className="text-white font-bold text-xl drop-shadow-md">Tapis & Moquettes</span>
               </div>
               <img src="/tapis-avant.jpg" alt="Nettoyage Tapis Avant" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-500 opacity-100 group-hover:opacity-0" />
@@ -149,7 +150,7 @@ export default function Home() {
       </div>
 
       {/* Avis Clients (Cartes élégantes) */}
-      <div id="avis" className="py-16 bg-cream scroll-mt-20 border-t border-gray-100">
+      <div id="avis" className="py-16 bg-[#F9FAFB] scroll-mt-20 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-gray-900 mb-2">Ils nous recommandent</h2>
