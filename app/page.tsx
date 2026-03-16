@@ -30,12 +30,12 @@ export default function Home() {
             Location de matériel professionnel Kärcher et prestations de nettoyage à domicile sur le bassin d'Annecy.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="bg-[#F3C300] text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1">
+            <a href="https://www.cal.eu/shampouineuse-annecy-fwsbqq" target="_blank" rel="noopener noreferrer" className="bg-[#F3C300] text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1 text-center">
                📅 Louer une machine
-            </button>
-            <button className="bg-white text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition">
+            </a>
+            <a href="https://cal.eu/shampouineuse-annecy-fwsbqq/prestation" target="_blank" rel="noopener noreferrer" className="bg-white text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-gray-100 transition text-center">
               Demander une prestation
-            </button>
+            </a>
           </div>
           <div className="mt-8 flex items-center gap-4 text-sm text-gray-400">
             <span>🔒 Caution sécurisée (non débitée)</span>
