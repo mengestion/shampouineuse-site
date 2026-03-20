@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import LightboxGallery from '../../components/LightboxGallery';
 
-export default function Gallery() {
+export default function GalleryCanapes() {
+  const images = ['/canape.jpg'];
+
   return (
     <div className="bg-[#F9FAFB] min-h-screen font-sans text-gray-800">
       <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -14,14 +17,12 @@ export default function Gallery() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Galerie Canapés</h1>
-          <p className="text-xl text-gray-600">Retrouvez nos avant/après et l'eau extraite de vos textiles.</p>
+          <p className="text-xl text-gray-600">Retrouvez nos réalisations et l'eau extraite de vos textiles.</p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
-          <img src="/canape.jpg" alt="Galerie Canapés" className="w-full h-full object-cover rounded-xl shadow-sm aspect-square hover:scale-105 transition-transform duration-300" />
-        </div>
+        <LightboxGallery images={images} title="Galerie Canapés" />
         
-        <div className="text-center">
+        <div className="text-center mt-12">
           <a href="https://cal.eu/shampouineuse-annecy-fwsbqq/prestation" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#F3C300] text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1">
             📅 Réserver une prestation
           </a>

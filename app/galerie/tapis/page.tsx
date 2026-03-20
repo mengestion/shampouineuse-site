@@ -1,6 +1,9 @@
 import Link from 'next/link';
+import LightboxGallery from '../../components/LightboxGallery';
 
-export default function Gallery() {
+export default function GalleryTapis() {
+  const images = ['/tapis-avant.jpg', '/tapis-apres.jpg'];
+
   return (
     <div className="bg-[#F9FAFB] min-h-screen font-sans text-gray-800">
       <nav className="bg-white shadow-sm sticky top-0 z-50">
@@ -17,12 +20,9 @@ export default function Gallery() {
           <p className="text-xl text-gray-600">Ravivage des couleurs et extraction des acariens en profondeur.</p>
         </div>
         
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-16">
-          <img src="/tapis-avant.jpg" alt="Tapis & Moquettes" className="w-full h-full object-cover rounded-xl shadow-sm aspect-square hover:scale-105 transition-transform duration-300" />
-          <img src="/tapis-apres.jpg" alt="Tapis & Moquettes" className="w-full h-full object-cover rounded-xl shadow-sm aspect-square hover:scale-105 transition-transform duration-300" />
-        </div>
+        <LightboxGallery images={images} title="Tapis & Moquettes" />
         
-        <div className="text-center">
+        <div className="text-center mt-12">
           <a href="https://cal.eu/shampouineuse-annecy-fwsbqq/prestation" target="_blank" rel="noopener noreferrer" className="inline-block bg-[#F3C300] text-gray-900 font-bold px-8 py-4 rounded-lg shadow-lg hover:bg-yellow-400 transition transform hover:-translate-y-1">
             📅 Réserver une prestation
           </a>
