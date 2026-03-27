@@ -56,29 +56,29 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Location Card */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-              <div className="w-16 h-16 bg-yellow-100 text-[#F3C300] rounded-full flex items-center justify-center mb-6 text-3xl font-bold">
+            <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-yellow-100 text-[#F3C300] rounded-full flex items-center justify-center mb-4 md:mb-6 text-2xl md:text-3xl font-bold">
                 📦
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Location de Matériel</h3>
-              <ul className="space-y-4 text-gray-600 mb-8">
-                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <b>Principe de retrait :</b> Vous récupérez le matériel au point de rendez-vous gratuitement.</li>
-                <li className="flex items-start"><span className="text-[#F3C300] mr-3 text-lg">📍</span> <b>Option Livraison (+10€) :</b> Possible dans un rayon de 10 à 15km autour du point de retrait.</li>
-                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> Machine Kärcher entretenue, caution sécurisée en ligne.</li>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Location de Matériel</h3>
+              <ul className="space-y-4 text-sm md:text-base text-gray-600 mb-8">
+                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <span><b>Principe de retrait :</b> Vous récupérez le matériel au point de rendez-vous gratuitement.</span></li>
+                <li className="flex items-start"><span className="text-[#F3C300] mr-3 text-lg">📍</span> <span><b>Option Livraison (+10€) :</b> Possible dans un rayon de 10 à 15km autour du point de retrait.</span></li>
+                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <span>Machine Kärcher entretenue, caution sécurisée en ligne.</span></li>
               </ul>
             </div>
 
             {/* Prestation Card */}
-            <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
-              <div className="w-16 h-16 bg-yellow-100 text-[#F3C300] rounded-full flex items-center justify-center mb-6 text-3xl font-bold">
+            <div className="bg-white p-6 md:p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition">
+              <div className="w-14 h-14 md:w-16 md:h-16 bg-yellow-100 text-[#F3C300] rounded-full flex items-center justify-center mb-4 md:mb-6 text-2xl md:text-3xl font-bold">
                 ✨
               </div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Prestation de Nettoyage</h3>
-              <ul className="space-y-4 text-gray-600 mb-8">
-                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <b>1 Prestation</b> = 1 Meuble, 1 Tapis OU 1 Habitacle de Voiture.</li>
-                <li className="flex items-start"><span className="text-[#F3C300] mr-3 text-lg">➕</span> <b>Chaque élément supplémentaire :</b> +20€ (canapé additionnel, etc).</li>
-                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <b>Déplacement inclus</b> dans un rayon de 10-15km (au-delà : sur devis).</li>
-                <li className="flex items-start"><span className="text-red-500 mr-3 text-lg">⚠️</span> <b>Important :</b> Nous avons impérativement besoin d'un accès à une prise électrique sur place.</li>
+              <h3 className="text-xl md:text-2xl font-bold text-gray-900 mb-4">Prestation de Nettoyage</h3>
+              <ul className="space-y-4 text-sm md:text-base text-gray-600 mb-8">
+                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <span><b>1 Prestation</b> = 1 Meuble, 1 Tapis OU 1 Habitacle de Voiture.</span></li>
+                <li className="flex items-start"><span className="text-[#F3C300] mr-3 text-lg">➕</span> <span><b>Chaque élément supplémentaire :</b> +20€ (canapé additionnel, etc).</span></li>
+                <li className="flex items-start"><span className="text-green-500 mr-3 text-lg">✓</span> <span><b>Déplacement inclus</b> dans un rayon de 10-15km (au-delà : sur devis).</span></li>
+                <li className="flex items-start"><span className="text-red-500 mr-3 text-lg">⚠️</span> <span><b>Important :</b> Nous avons impérativement besoin d'un accès à une prise électrique sur place.</span></li>
               </ul>
             </div>
           </div>
